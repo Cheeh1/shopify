@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+    <title>Shopify</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar">
+        <a
+          href="https://wwww.shopify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="logo-img-1"
+            src="/public/images/shopify.svg"
+            alt="shopify-icon-desktop"
+            role="link"
+          />
+        </a>
+        <a
+          href="https://wwww.shopify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="link"
+        >
+          <img
+            class="logo-img-2"
+            src="/public/images/shopify-mobile.svg"
+            alt="shopify"
+          />
+        </a>
+        <div class="search">
+          <input
+            class="search-bar"
+            placeholder="Search"
+            type="text"
+            name="search"
+            id="search"
+          />
+          <img
+            class="search-icon"
+            src="/public/images/search-bar.svg"
+            alt="search-bar"
+          />
+        </div>
+        <div class="profile">
+          <!-- <img id="alertImg" src="/public/images/tag.svg" alt="tag" /> -->
+          <div
+            id="alertImg"
+            role="button"
+            class="alert-img alert-img-active"
+            tabindex="0"
+          >
+            <img src="/public/images/alert.svg" alt="alert" />
+          </div>
+
+          <div
+            id="profile-select"
+            class="profile-1 alert-img-active"
+            tabindex="0"
+            role="button"
+          >
+            <p class="profile-name">Davii Collections</p>
+            <span class="profile-name-1">DC</span>
+          </div>
+        </div>
+
+        <div id="alertInfo" role="alert" class="alerts hidden">
+          <div class="alerts-1">
+            <h1 class="alerts-header">Alerts</h1>
+            <div class="alerts-2">
+              <img src="/public/images/filter-major.svg" alt="filter" />
+              <img
+                src="/public/images/circle-tick-major.svg"
+                alt="circle-tick"
+              />
+            </div>
+          </div>
+          <p class="alerts-text">
+            Alerts about your store and account will show here
+          </p>
+        </div>
+
+        <div id="profile-dropdown" role="menu" class="profile-dropdown hidden">
+          <div class="profile-dropdown-1">
+            <div class="profile-dropdown-2">
+              <span class="profile-dropdown-2-name">DC</span>
+              <p class="profile-dropdown-2-name-1">Davii Collections</p>
+            </div>
+            <img src="/public/images/check.svg" alt="check" />
+          </div>
+
+          <a
+            class="profile-dropdown-link"
+            href="http://admin.shopify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+          >
+            <div class="profile-dropdown-store">
+              <img src="/public/images/store.svg" alt="store" />
+              <p class="profile-dropdown-text">All stores</p>
+            </div>
+          </a>
+          <hr class="break-line" />
+          <div class="profile-dropdown-options">
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Help Center</p>
+            </a>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Changelog</p>
+            </a>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Hire a Shopify Partner</p>
+            </a>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Community forums</p>
+            </a>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Keyboard shortcuts</p>
+            </a>
+          </div>
+          <hr class="break-line" />
+          <div class="profile-dropdown-3">
+            <div class="profile-dropdown-4">
+              <h1 class="profile-dropdown-4-name">David Micheal</h1>
+              <p class="profile-dropdown-4-email">davidmicheal@gmail.com</p>
+            </div>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Manage account</p>
+            </a>
+            <a
+              class="profile-dropdown-link"
+              href="http://admin.shopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <p class="profile-dropdown-text">Log out</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="setup">
+        <div id="trial" class="plan">
+          <div class="plan-1">
+            <p class="plan-text">
+              Extend your trial for $1/month for 3 months on select plans.
+            </p>
+            <a
+              href="http://www.shopify.com/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+            >
+              <button role="button" class="plan-btn">Select a plan</button>
+            </a>
+          </div>
+          <div role="button" id="trial-btn" tabindex="0">
+            <img class="trial-btn" src="/public/images/icons.svg" alt="close" />
+          </div>
+        </div>
+
+        <section class="setup-guide">
+          <div class="setup-guide-top">
+            <div class="setup-guide-1">
+              <div class="setup-guide-3">
+                <h1 class="setup-guide-header">Setup guide</h1>
+                <p class="setup-guide-text">
+                  Use this personalized guide to get your store up and running.
+                </p>
+              </div>
+              <div class="setup-guide-2">
+                <p class="completed">1/5 completed</p>
+                <img
+                  src="/public/images/setup-guide-setup-guide-frame-1000003542.svg"
+                  alt="progress-bar"
+                />
+              </div>
+            </div>
+            <!-- <img id="setup-guide-select" class="rotate" src="/public/images/chevron.svg" alt="chevron" /> -->
+            <div id="setup-guide-select" role="button" tabindex="0">
+              <img
+                class="rotate"
+                src="/public/images/chevron-2.svg"
+                alt="chevron"
+              />
+            </div>
+          </div>
+
+          <div id="setup-items" role="menu" class="setup-items hidden">
+            <div id="item-1-bg" class="online-store online-store-bg">
+              <div class="online-store-1">
+                <div
+                  id="item-1-select"
+                  class="online-store-header"
+                  tabindex="0"
+                  role="menuitem"
+                >
+                  <p class="online-store-circle" role="checkbox" tabindex="0"></p>
+                  <!-- <div
+                    id="checkbox"
+                    class="checkbox"
+                    onclick="toggleCheckbox()"
+                  ></div> -->
+                  <p class="online-store-header">Customize your online store</p>
+                </div>
+                <div id="item-1-dropdown" class="online-store-3 hidden">
+                  <div class="online-store-2">
+                    <p class="online-store-text">
+                      Choose a theme and add your logo, colors, and images to
+                      reflect your brand.
+                      <span class="learn-more">Learn more</span>
+                    </p>
+                    <button class="button">Customize theme</button>
+                  </div>
+                  <img
+                    class="img"
+                    src="/public/images/setup-guide-setup-guide-illustrations.png"
+                    alt="illustration"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="item-2-bg" class="online-store online-store-bg">
+              <div class="online-store-1">
+                <div
+                  id="item-2-select"
+                  class="online-store-header"
+                  tabindex="0"
+                >
+                  <p class="online-store-circle" tabindex="0"></p>
+                  <!-- <div
+                    id="checkbox"
+                    class="checkbox"
+                    onclick="toggleCheckbox()"
+                  ></div> -->
+                  <p class="online-store-header">Add your first product</p>
+                </div>
+                <div id="item-2-dropdown" class="online-store-3 hidden">
+                  <div class="online-store-2">
+                    <p class="online-store-text">
+                      Write a description, add photos, and set pricing for the
+                      products you plan to sell
+                      <span class="learn-more">Learn more</span>
+                    </p>
+                    <div class="product-btn">
+                      <button class="button">Add product</button>
+                      <button class="button-2">Import products</button>
+                    </div>
+                  </div>
+                  <img
+                    class="img"
+                    src="/public/images/setup-guide-setup-guide-add-your-first-product-img.png"
+                    alt="illustration"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="item-3-bg" class="online-store online-store-bg">
+              <div class="online-store-1">
+                <div
+                  id="item-3-select"
+                  class="online-store-header"
+                  tabindex="0"
+                >
+                  <p class="online-store-circle" tabindex="0"></p>
+                  <!-- <input type="checkbox" name="" id="item-3-checkbox" /> -->
+                  <p class="online-store-header">Add a custom domain</p>
+                </div>
+                <div id="item-3-dropdown" class="online-store-3 hidden">
+                  <div class="online-store-2">
+                    <p class="online-store-text">
+                      Your current domain is 222219.myshopify.com but you can
+                      add a custom domain to help customers find your online
+                      store.
+                      <span class="learn-more">Learn more</span>
+                    </p>
+
+                    <button class="button">Add domain</button>
+                  </div>
+                  <img
+                    class="img"
+                    src="/public/images/setup-guide-setup-guide-add-a-custom-domain-img.png"
+                    alt="illustration"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="item-4-bg" class="online-store online-store-bg">
+              <div class="online-store-1">
+                <div
+                  id="item-4-select"
+                  class="online-store-header"
+                  tabindex="0"
+                >
+                  <p class="online-store-circle" tabindex="0"></p>
+                  <!-- <input type="checkbox" name="" id="item-4-checkbox" /> -->
+                  <p class="online-store-header">Name your store</p>
+                </div>
+                <div id="item-4-dropdown" class="online-store-3 hidden">
+                  <div class="online-store-2">
+                    <p class="online-store-text">
+                      Your temporary store name is currently Davii collections.
+                      The store name appears in your admin and your online store
+                      <span class="learn-more">Learn more</span>
+                    </p>
+
+                    <button class="button">Name store</button>
+                  </div>
+                  <img
+                    class="img"
+                    src="/public/images/setup-guide-setup-guide-illustrations-name-store.png"
+                    alt="illustration"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="item-5-bg" class="online-store online-store-bg">
+              <div class="online-store-1">
+                <div
+                  id="item-5-select"
+                  class="online-store-header"
+                  tabindex="0"
+                >
+                  <p class="online-store-circle" tabindex="0"></p>
+                  <!-- <input type="checkbox" name="" id="item-checkbox-5" /> -->
+                  <p class="online-store-header">Set up a payment provider</p>
+                </div>
+                <div id="item-5-dropdown" class="online-store-3 hidden">
+                  <div class="online-store-2">
+                    <p class="online-store-text">
+                      Choose a payment provider to start accepting payments.
+                      You’ll need to create an account with the payment provider
+                      and set it up with your Shopify store.
+                      <span class="learn-more">Learn more</span>
+                    </p>
+
+                    <button class="button payment-btn">Set up payment</button>
+                  </div>
+                  <img
+                    class="img"
+                    src="/public/images/setup-guide-setup-guide-set-up-a-payment-provider-img.png"
+                    alt="illustration"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
