@@ -59,6 +59,17 @@ const setupCounter = document.getElementById("setup-counter");
 let i = parseInt(setupCounter.innerText);
 setupCounter.innerText = i;
 
+// progress bar increment
+const progressBar = document.getElementById("progress-bar");
+const updateProgressBar = () => {
+  const counterValue = parseInt(setupCounter.innerText);
+  const maxWidth = 5; // Set your desired maximum width
+  const percentage = (counterValue / maxWidth) * 100;
+  progressBar.style.width = percentage + "%";
+};
+updateProgressBar();
+setupCounter.addEventListener("DOMSubtreeModified", updateProgressBar);
+
 // setup-guide
 let setup = document.getElementById("setup-guide-select");
 let setupDropdown = document.getElementById("setup-items");

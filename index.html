@@ -14,6 +14,7 @@
           href="https://wwww.shopify.com"
           target="_blank"
           rel="noopener noreferrer"
+          class="logo-img-1"
         >
           <img
             class="logo-img-1"
@@ -27,6 +28,7 @@
           target="_blank"
           rel="noopener noreferrer"
           role="link"
+          class="logo-img-2"
         >
           <img
             class="logo-img-2"
@@ -73,11 +75,15 @@
           <div class="alerts-1">
             <h1 class="alerts-header">Alerts</h1>
             <div class="alerts-2">
-              <img src="/public/images/filter-major.svg" alt="filter" />
-              <img
-                src="/public/images/circle-tick-major.svg"
-                alt="circle-tick"
-              />
+              <div tabindex="0">
+                <img src="/public/images/filter-major.svg" alt="filter" />
+              </div>
+              <div tabindex="0">
+                <img
+                  src="/public/images/circle-tick-major.svg"
+                  alt="circle-tick"
+                />
+              </div>
             </div>
           </div>
           <p class="alerts-text">
@@ -215,13 +221,15 @@
                 <p class="completed">
                   <span id="setup-counter">0</span>/5 completed
                 </p>
-                <img
-                  src="/public/images/setup-guide-setup-guide-frame-1000003542.svg"
-                  alt="progress-bar"
-                />
+                <div class="progress-bar-container">
+                  <span
+                    role="presentation"
+                    class="progress-bar"
+                    id="progress-bar"
+                  ></span>
+                </div>
               </div>
             </div>
-            <!-- <img id="setup-guide-select" class="rotate" src="/public/images/chevron.svg" alt="chevron" /> -->
             <div id="setup-guide-select" role="button" tabindex="0">
               <img
                 class="rotate"

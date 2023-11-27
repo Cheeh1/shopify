@@ -13,12 +13,18 @@ html {
 body {
   background-color: #b5b5b5;
 }
+
+*:focus-visible {
+  outline: 2px solid #005bd3;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-bottom: 200px;
 }
+
 .navbar {
   display: flex;
   padding: 12px 16px;
@@ -31,6 +37,7 @@ body {
 .logo-img-1 {
   display: block;
 }
+
 .logo-img-2 {
   display: none;
 }
@@ -201,6 +208,24 @@ body {
   font-family: Inter;
 }
 
+.progress-bar-container {
+  width: 100px;
+  height: 5px;
+  background-color: #ddd;
+  margin-top: 8px;
+  position: relative;
+  top: -3px;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: black; /* Green color */
+  transition: width 0.3s ease;
+}
+
 .setup-items {
   display: flex;
   flex-direction: column;
@@ -230,6 +255,27 @@ body {
   display: flex;
   gap: 5px;
   align-content: center;
+}
+
+.online-store-header {
+  margin-top: 4px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#setup-sect-load-one,
+#setup-sect-load-two,
+#setup-sect-load-three,
+#setup-sect-load-four,
+#setup-sect-load-five {
+  animation: rotate 1s infinite linear;
 }
 
 .online-store-circle {
@@ -329,6 +375,12 @@ body {
   z-index: 1;
 }
 
+.profile-dropdown:focus-visible {
+  outline: 2px solid #005bd3;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+
 .profile-dropdown-1 {
   display: flex;
   justify-content: space-between;
@@ -383,14 +435,12 @@ body {
   text-decoration: none;
 }
 
-.profile-dropdown-text:focus {
-  border: 2px solid var(--states-focused, #005bd3);
-  border-radius: 8px;
-}
-.profile-dropdown-text:hover {
-  border: 2px solid var(--states-focused, #005bd3);
-  border-radius: 8px;
-  padding: 2px 2px 2px 2px;
+.profile-dropdown-link:focus-visible {
+  outline: 2px solid #005bd3;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .break-line {
@@ -485,7 +535,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .navbar {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .logo-img-1 {
