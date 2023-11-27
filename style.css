@@ -220,21 +220,6 @@ body {
   background: #ffffff;
 }
 
-.checkbox {
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.checkbox.unchecked {
-    background-image: url('/public/images/chechbox.svg'); /* URL for the default unchecked image */
-}
-
-.checkbox.checked {
-    background-image: url('https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'); /* URL for the checked image */
-}
-
 .online-store-1 {
   display: flex;
   flex-direction: column;
