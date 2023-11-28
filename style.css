@@ -229,7 +229,6 @@ body {
 .setup-items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .online-store {
