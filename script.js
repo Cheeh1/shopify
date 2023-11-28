@@ -68,7 +68,7 @@ const updateProgressBar = () => {
   progressBar.style.width = percentage + "%";
 };
 updateProgressBar();
-setupCounter.addEventListener("DOMSubtreeModified", updateProgressBar);
+setupCounter.addEventListener("MutationObserver", updateProgressBar);
 
 // setup-guide
 let setup = document.getElementById("setup-guide-select");
