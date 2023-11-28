@@ -222,7 +222,7 @@ body {
   display: block;
   height: 100%;
   width: 0;
-  background-color: black; /* Green color */
+  background-color: black;
   transition: width 0.3s ease;
 }
 
@@ -233,7 +233,6 @@ body {
 
 .online-store {
   display: flex;
-  /* justify-content: space-between; */
   align-items: start;
   border-radius: 10px;
   background: #f3f3f3;
@@ -394,10 +393,6 @@ body {
   gap: 5px;
   align-items: center;
 }
-
-/* #profile-select:focus-visible {
-  outline: 1px solid #005bd3;
-} */
 
 .profile-dropdown-2-name {
   background: #36fba1;
